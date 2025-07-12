@@ -7,3 +7,5 @@ import { carouselHandler } from "./carousel";
 makeCollapsable("dropdown", "expandable-list");
 carouselHandler.makeArrows();
 carouselHandler.makeCircles();
+
+window.addEventListener("load", () => setInterval(carouselHandler.moveRight, 5000));
